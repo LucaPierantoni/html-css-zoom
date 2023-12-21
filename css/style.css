@@ -9,8 +9,11 @@ main {
 }
 
 nav {
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(31, 31, 31);
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* view type buttons */
@@ -73,7 +76,7 @@ nav {
 }
 .cam {
     min-width: 200px;
-    max-width: 250px;
+    max-width: 10%;
     margin: 5px 5px;
     position: relative;
 }
@@ -90,4 +93,74 @@ nav {
     padding: 5px 5px;
     color: white;
     background-color: rgba(0, 0, 0, 0.459);
+}
+/* nav section */
+
+/* left nav section */
+.nav-lx {
+    display: flex;
+    margin-left: 15px;
+}
+.mic, .vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* note under links */
+.note {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+/* generic style links */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+}
+.fa-chevron-up {
+    font-size: 20px;
+}
+
+/* central nav section */
+.nav-cx {
+    display: flex;
+}
+.nav-opz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;  
+}
+.fa-desktop {
+    color: white;
+    border-radius: 50px;
+    background-color: green;
+}
+.number{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+/* right nav section */
+.nav-rx {
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end a {
+    font-size: 25px;
+    color: red;
+    height: 100px;
+    width: 100%;
 }
