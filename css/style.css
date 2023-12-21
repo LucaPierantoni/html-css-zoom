@@ -12,3 +12,35 @@ nav {
     background-color: rgb(82, 82, 82);
     height: 100px;
 }
+
+/* view type buttons */
+.view-type {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+.view-type a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.view-type .fa-th-large {
+    padding-right: 10px;
+}
+
+/* webcam section start */
+#main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    border: solid white;
+    color: white;
+}
+#cam-container{
+    border: solid gold;
+}
