@@ -38,9 +38,56 @@ nav {
 }
 
 .arrow {
-    border: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     color: white;
+    font-size: 50px;
+    margin: 0px 30px;
+    /* debug */
+/*     border: solid white; */
 }
-#cam-container{
-    border: solid gold;
+.arrow div {
+    font-size: 25px;
+}
+.arrow a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+.arrow a:hover {
+    color:aqua;
+}
+
+/* cam section */
+#cam-container {
+    height: calc(100vh - 250px);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    
+}
+.cam {
+    min-width: 200px;
+    max-width: 250px;
+    margin: 5px 5px;
+    position: relative;
+}
+.cam img {
+    max-width: 100%;
+}
+.cam:last-child{
+    border: solid 3px yellowgreen;
+}
+.overlay {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 5px 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
 }
